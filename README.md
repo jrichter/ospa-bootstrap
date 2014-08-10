@@ -10,6 +10,9 @@ Install
     cd bootstrap-sinatra
     bundle install
 
+Run
+===
+
     shotgun
 
 Then visit [http://localhost:9393/](http://localhost:9393/)
