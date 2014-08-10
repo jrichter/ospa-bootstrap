@@ -6,8 +6,7 @@ Boilerplate for [Bootstrap](http://getbootstrap.com/) apps running on [Sinatra](
 Install
 ===
 
-    git clone https://github.com/jrichter/bootstrap-sinatra
-
+    git clone [https://github.com/jrichter/bootstrap-sinatra](https://github.com/jrichter/bootstrap-sinatra)
     cd bootstrap-sinatra
     bundle install
 
