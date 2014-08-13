@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 require 'sinatra'
 require 'sinatra/asset_pipeline'
-
+require 'bootstrap-sass'
 
 class App < Sinatra::Base
   set :environment, :production # run the rake task to precompile assets when going production
