@@ -4,7 +4,7 @@ require 'sinatra/asset_pipeline'
 
 
 class App < Sinatra::Base
-  set :environment, :development # run the rake task to precompile assets when going production
+  set :environment, :production # run the rake task to precompile assets when going production
   register Sinatra::AssetPipeline
 
   get '/' do
