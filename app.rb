@@ -8,8 +8,19 @@ class App < Sinatra::Base
   register Sinatra::AssetPipeline
 
   get '/' do
-    @site_title = 'Bootstrap Sinatra'
+    @site_title = 'OSPA'
     haml :index
   end
+
+  get '/signup' do
+    @site_title = 'OSPA'
+    haml :signup
+  end
+
+  get '/contact' do
+    @site_title = 'OSPA'
+    haml :contact
+  end
+
 
 end

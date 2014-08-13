@@ -1,7 +1,20 @@
-%div.starter-template
-  %h1
-    Bootstrap Sinatra Starter Template
-  %p.lead
-    Use this document as a way to quickly start any new project.
-    %br
-    All you get is this text and a mostly barebones haml document.
+%div.jumbotron
+  %div.container
+    %h1
+      Oklahoma Sod Field Days
+    %p.lead
+      Save the date!
+      %br
+      October 3rd and 4th OSPA will host an Oklahoma Sod Field Days at Tulsa Grass and Sod Farms, Inc.!
+%div.container
+  %div
+    %img{src: image_path('far_off.jpg'), class: "img-rounded img-responsive", alt: ""}
+    %p.text-muted
+      2007 Oklahoma Sod Field Days
+%div.jumbotron
+  %div.container
+    %div.row
+      %div.col-md-4
+        =haml :contact, :layout => false
+      %div.col-md-6
+        =haml :signup, :layout => false

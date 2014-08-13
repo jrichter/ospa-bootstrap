@@ -1,10 +1,25 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$title-green: #098d00;
+$grey-shadow: #bfbfbf;
+$blue: #0074d9;
+
 body {
   padding-top: 50px;
 }
-.starter-template {
+.heading {
   padding: 40px 15px;
   text-align: center;
+}
+.dark {
+  background-color: #a1a1a1;
+}
+.navbar-inverse{
+  .navbar-brand {
+    color: $blue;
+  }
+}
+.text-blue {
+  color: $blue;
 }
