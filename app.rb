@@ -4,7 +4,7 @@ require 'sinatra/asset_pipeline'
 require 'bootstrap-sass'
 
 class App < Sinatra::Base
-  set :environment, :production # run the rake task to precompile assets when going production
+  set :environment, :development # run the rake task to precompile assets when going production
   register Sinatra::AssetPipeline
 
   get '/' do
@@ -22,5 +22,15 @@ class App < Sinatra::Base
     haml :contact
   end
 
+  get '/invitation.pdf' do
+    send_file "invitation.pdf", :filename => "invitation.pdf", :type => 'Application/octet-stream'
+  end
 
+  get '/hotel.pdf' do
+    send_file "hotel.pdf", :filename => "hotel.pdf", :type => 'Application/octet-stream'
+  end
+
+  get '/farm_registration.pdf' do
+    send_file "farm_registration.pdf", :filename => "farm_registration.pdf", :type => 'Application/octet-stream'
+  end
 end
