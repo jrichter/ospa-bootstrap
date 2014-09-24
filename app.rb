@@ -33,4 +33,8 @@ class App < Sinatra::Base
   get '/farm_registration.pdf' do
     send_file "farm_registration.pdf", :filename => "farm_registration.pdf", :type => 'Application/octet-stream'
   end
+
+  get '/ScheduleOfEventsAndContestRules.pdf' do
+    send_file "ScheduleOfEventsAndContestRules.pdf", :filename => "ScheduleOfEventsAndContestRules.pdf", :type => 'Application/octet-stream'
+  end
 end
